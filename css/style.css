@@ -40,10 +40,20 @@ header {
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
+pre {
+    background: #282c34;
+    color: #abb2bf;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Monaco', monospace;
+    margin-top: 1rem;
+}
+
 code {
-    background: #e8f0fe;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    color: #e06c75; /* Un color rojizo para resaltar términos en el texto */
+    font-weight: bold;
 }
 
 footer {
