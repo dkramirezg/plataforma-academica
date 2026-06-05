@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Académica - Fundamentos de Programación</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🎓 Plataforma Académica</h1>
+        <p>Aprende los fundamentos esenciales de la programación</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>1. ¿Qué es una Variable?</h2>
+            <p>Es un espacio en la memoria de la computadora donde guardamos un dato que puede cambiar durante la ejecución del programa.</p>
+            <pre><code>$nombre = "Deisy"; // Ejemplo en PHP</code></pre>
+        </section>
+
+        <section class="card">
+            <h2>2. Estructuras de Control</h2>
+            <p>Permiten controlar el flujo de un programa (decidir si algo se hace o no, o repetirlo).</p>
+            <ul>
+                <li><strong>Condicionales (If):</strong> Para tomar decisiones.</li>
+                <li><strong>Bucles (For/While):</strong> Para repetir tareas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por DEISY KATHERINNE RAMIREZ GARCIA - Código: 90613</p>
+    </footer>
+</body>
+</html>
