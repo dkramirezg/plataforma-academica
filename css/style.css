@@ -41,19 +41,17 @@ header {
 }
 
 pre {
-    background: #282c34;
-    color: #abb2bf;
-    padding: 1rem;
+    /* Ajustamos el pre para que Prism maneje el fondo */
+    padding: 0 !important;
     border-radius: 6px;
-    overflow-x: auto;
+    overflow: hidden;
     font-family: 'Consolas', 'Monaco', monospace;
     margin-top: 1rem;
 }
 
 code {
     font-family: 'Consolas', 'Monaco', monospace;
-    color: #e06c75; /* Un color rojizo para resaltar términos en el texto */
-    font-weight: bold;
+    color: #d63384; /* Color para términos resaltados en el párrafo */
 }
 
 footer {

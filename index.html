@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma Académica - Fundamentos de Programación</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Añadimos un tema de Prism.js para resaltado de código -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
 </head>
 <body>
     <header>
@@ -16,7 +18,7 @@
         <section class="card">
             <h2>1. ¿Qué es una Variable?</h2>
             <p>Es un espacio en la memoria de la computadora donde guardamos un dato que puede cambiar durante la ejecución del programa.</p>
-            <pre><code>&lt;?php
+            <pre><code class="language-php">&lt;?php
 $nombre = "Deisy"; // Las variables inician con $
 ?&gt;</code></pre>
         </section>
@@ -33,14 +35,25 @@ $nombre = "Deisy"; // Las variables inician con $
         <section class="card">
             <h2>3. Funciones</h2>
             <p>Son bloques de código reutilizables que realizan una tarea específica. Ayudan a mantener el código organizado y evitar repeticiones.</p>
-            <pre><code>function saludar($nombre) {
+            <pre><code class="language-php">function saludar($nombre) {
     return "Hola " . $nombre;
 }</code></pre>
+        </section>
+
+        <section class="card">
+            <h2>4. Arreglos (Arrays)</h2>
+            <p>Un arreglo es una colección de datos organizados. Imagínalo como una lista de compras donde cada elemento tiene una posición.</p>
+            <pre><code class="language-php">$frutas = ["Manzana", "Pera", "Bananos"];
+echo $frutas[0]; // Muestra "Manzana"</code></pre>
         </section>
     </main>
 
     <footer>
         <p>Desarrollado por DEISY KATHERINNE RAMIREZ GARCIA - Código: 90613</p>
     </footer>
+
+    <!-- Script necesario para que el resaltado de código funcione -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-php.min.js"></script>
 </body>
 </html>
