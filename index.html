@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Añadimos un tema de Prism.js para resaltado de código -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -16,35 +18,54 @@
 
     <main class="container">
         <section class="card">
-            <h2>1. ¿Qué es una Variable?</h2>
+            <h2><i class="fas fa-box"></i> 1. Variables</h2>
             <p>Es un espacio en la memoria de la computadora donde guardamos un dato que puede cambiar durante la ejecución del programa.</p>
             <pre><code class="language-php">&lt;?php
 $nombre = "Deisy"; // Las variables inician con $
 ?&gt;</code></pre>
+            <div class="pro-tip">💡 <strong>Tip:</strong> Usa nombres descriptivos como <code>$precio_total</code> en lugar de solo <code>$p</code>.</div>
         </section>
 
         <section class="card">
-            <h2>2. Estructuras de Control</h2>
-            <p>Permiten controlar el flujo de un programa (decidir si algo se hace o no, o repetirlo).</p>
-            <ul>
-                <li><strong>Condicionales (If):</strong> Para tomar decisiones.</li>
-                <li><strong>Bucles (For/While):</strong> Para repetir tareas.</li>
-            </ul>
-        </section>
+            <h2><i class="fas fa-code-branch"></i> 2. Operadores Lógicos</h2>
+            <p>Permiten comparar valores y tomar decisiones complejas combinando condiciones.</p>
+            <pre><code class="language-php">$edad = 20;
+$tiene_licencia = true;
 
-        <section class="card">
-            <h2>3. Funciones</h2>
-            <p>Son bloques de código reutilizables que realizan una tarea específica. Ayudan a mantener el código organizado y evitar repeticiones.</p>
-            <pre><code class="language-php">function saludar($nombre) {
-    return "Hola " . $nombre;
+if ($edad >= 18 && $tiene_licencia) {
+    echo "Puedes conducir";
 }</code></pre>
         </section>
 
         <section class="card">
-            <h2>4. Arreglos (Arrays)</h2>
+            <h2><i class="fas fa-redo"></i> 3. Bucles (Loops)</h2>
+            <p>Se utilizan para repetir un bloque de código varias veces mientras se cumpla una condición.</p>
+            <pre><code class="language-php">// Bucle que cuenta del 1 al 5
+for ($i = 1; $i <= 5; $i++) {
+    echo "Número: $i ";
+}</code></pre>
+        </section>
+
+        <section class="card">
+            <h2><i class="fas fa-cube"></i> 4. Funciones</h2>
+            <p>Son bloques de código reutilizables que realizan una tarea específica. Ayudan a mantener el código organizado y evitar repeticiones.</p>
+            <pre><code class="language-php">function saludar($nombre) {
+    return "Hola " . $nombre;
+}</code></pre>
+            <div class="pro-tip">💡 <strong>Tip:</strong> Si repites el mismo código más de dos veces, ¡conviértelo en una función!</div>
+        </section>
+
+        <section class="card">
+            <h2><i class="fas fa-list"></i> 5. Arreglos (Arrays)</h2>
             <p>Un arreglo es una colección de datos organizados. Imagínalo como una lista de compras donde cada elemento tiene una posición.</p>
             <pre><code class="language-php">$frutas = ["Manzana", "Pera", "Bananos"];
 echo $frutas[0]; // Muestra "Manzana"</code></pre>
+        </section>
+
+        <section class="card">
+            <h2><i class="fas fa-terminal"></i> 6. Salida de Datos</h2>
+            <p>Para mostrar información al usuario en PHP usamos principalmente <code>echo</code> o <code>print</code>.</p>
+            <pre><code class="language-php">echo "¡Bienvenido al mundo de la programación!";</code></pre>
         </section>
     </main>
 
@@ -52,10 +73,9 @@ echo $frutas[0]; // Muestra "Manzana"</code></pre>
         <p>Desarrollado por DEISY KATHERINNE RAMIREZ GARCIA - Código: 90613</p>
     </footer>
 
-    <!-- Script necesario para que el resaltado de código funcione -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-php.min.js"></script>
-    <!-- Tu script local -->
-    <script src="js/main.js"></script>
+
+    <script src="main.js"></script>
 </body>
 </html>
